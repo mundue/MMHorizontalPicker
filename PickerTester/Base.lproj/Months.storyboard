@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Months View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MonthsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z3I-17-uAl"/>
+                        <viewControllerLayoutGuide type="bottom" id="KD9-Ja-DpX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5u-Lc-fAh">
+                                <rect key="frame" x="0.0" y="60" width="321" height="488"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph2-Xb-QLS">
+                                        <rect key="frame" x="129" y="230" width="63" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ArV-2s-BrU">
+                                        <rect key="frame" x="142" y="226" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Month Picker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXj-TO-okB">
+                                        <rect key="frame" x="78" y="447" width="165" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="Ph2-Xb-QLS" secondAttribute="centerX" id="24N-NP-0Cs"/>
+                                    <constraint firstAttribute="centerY" secondItem="Ph2-Xb-QLS" secondAttribute="centerY" id="Jk0-mc-8vv"/>
+                                    <constraint firstAttribute="centerY" secondItem="ArV-2s-BrU" secondAttribute="centerY" id="NL0-AG-pji"/>
+                                    <constraint firstAttribute="centerX" secondItem="yXj-TO-okB" secondAttribute="centerX" id="WCp-DY-pe1"/>
+                                    <constraint firstAttribute="bottom" secondItem="yXj-TO-okB" secondAttribute="bottom" constant="20" id="kZm-5S-l0W"/>
+                                    <constraint firstAttribute="centerX" secondItem="ArV-2s-BrU" secondAttribute="centerX" id="xTp-bl-2VJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nz1-9O-7cU" customClass="MMHorizontalPicker">
+                                <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZjZ-2k-zLI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nz1-9O-7cU" firstAttribute="centerX" secondItem="d5u-Lc-fAh" secondAttribute="centerX" id="1uo-rZ-6cH"/>
+                            <constraint firstItem="Nz1-9O-7cU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2c8-FO-giH"/>
+                            <constraint firstAttribute="centerX" secondItem="Nz1-9O-7cU" secondAttribute="centerX" id="GJ1-dE-PCM"/>
+                            <constraint firstAttribute="bottom" secondItem="d5u-Lc-fAh" secondAttribute="bottom" constant="20" id="Hhj-mY-wol"/>
+                            <constraint firstItem="Nz1-9O-7cU" firstAttribute="leading" secondItem="d5u-Lc-fAh" secondAttribute="leading" id="UUI-vD-idE"/>
+                            <constraint firstItem="Nz1-9O-7cU" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="sWR-hc-54w"/>
+                            <constraint firstItem="d5u-Lc-fAh" firstAttribute="top" secondItem="Nz1-9O-7cU" secondAttribute="bottom" id="yVR-79-8s3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="d5u-Lc-fAh" id="dVP-yA-uNg"/>
+                        <outlet property="picker" destination="Nz1-9O-7cU" id="zM3-Br-5J9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
